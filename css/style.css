@@ -1,0 +1,242 @@
+body{
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1rem;
+    background: linear-gradient(rgb(86, 86, 177),white,rgb(106, 124, 189)) no-repeat;
+}
+*,
+::after,
+::before
+{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+}
+p{
+    margin: 0 0 1rem;
+}
+/* Контейнер главный*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem 0 1rem;
+    margin: 0 auto;
+}
+/*шапка сайта*/
+.header{
+    padding: 1.2rem;
+    position: relative;
+}
+/*Блок шапки*/
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*Контейнер блок*/
+.user{
+    display: flex;
+}
+.user-text{
+    padding-left: 70px;
+    font-size: 1.2rem;
+    position: absolute;
+}
+/*Ссылки*/
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+.link-nav{
+    text-transform: uppercase;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: black;
+    position:relatives;
+    font-weight: bold; 
+    padding: 10px;
+}
+.link-nav:hover{
+    border-bottom:2px solid black;
+    
+    background-color: rgb(222, 222, 222);
+}
+.link-nav:focus{
+    background-color: rgb(167, 171, 181);
+}
+/*2 контейнер*/
+.intr-inner{
+display: flex;
+padding-top: 6.6rem;
+padding-bottom: 8rem;
+position: relative;
+border-bottom: 2px solid rgb(137, 137, 137);
+}
+
+/*Кнопка*/
+.btn{
+    margin-top: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 12rem;
+    border: 1px solid black;
+    border-radius: 1.8rem;
+    padding: 10px 0.7rem 10px 0.7rem;
+    background: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+/*Изображение*/
+.in-img{
+    width: 700px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    margin-bottom: 1.2em;
+    border-radius: 0.5rem;
+    box-shadow: 3px 5px 5px rgb(53, 53, 53) ;
+}
+.card1{
+    width: 20rem;
+    background-color: rgb(177, 224, 245);
+    box-shadow: 0px 0px 6px rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 0.7rem;
+}
+.h2{
+    padding: 2px;
+    margin-left: 5px;
+}
+.p{
+    padding-bottom: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.cont{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem 0 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;   
+    
+}
+.card1 .i1{
+    height:12rem;
+}
+.card1:hover{
+    box-shadow: 2px 2px 20px black;
+}
+.work{
+    margin-bottom: 7rem;
+}
+.about-in{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+}
+.about-text{
+    margin-top: 4rem;
+    padding-left: 6rem;
+}
+.review{
+    background-image: url(/фон1.jpg);
+    background-size: cover;
+    padding: 3rem 0;
+    margin-bottom: 10rem;
+    position: relative;
+}
+.review-in{
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+}
+.review-text{
+    text-align: center;
+    color: white;
+}
+.center-img{
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    width: 90px;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+}
+.info{
+    color:gray;
+    padding-top: 3rem;
+    padding-bottom: 0.4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media( max-width: 767px ){
+     .user, .user-text{
+        display: none;
+     }
+     .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 3rem;
+        border-bottom: 2px solid black;
+        
+        padding-bottom: 5rem;
+     }
+     .link-nav{
+        left: -30px;
+        position: relative;
+        padding: none;
+        margin-left: 0;
+        width: 10px;
+     }
+     body{
+        margin: 0;
+     }
+     .in-img{
+        width: 100%;
+        position: relative;
+        top:30px
+     }
+     .intr-inner{
+        display: inline-block;
+        margin-bottom: -100px;
+     }
+     .intr-content{
+        margin-top: -4rem;
+     }
+     .about-img{
+        width: 100%;
+     }
+     .about-text{
+        position: relative;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+     }
+     
+     
+}
